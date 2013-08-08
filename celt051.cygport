@@ -1,0 +1,22 @@
+NAME="celt051"
+VERSION=0.5.1.3
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="Xiph low-delay audio codec"
+DESCRIPTION="CELT is a very low delay audio codec designed for high-quality
+communications. Its potential uses include video-conferencing and network
+music performance. The code is still in early stage, so it may be broken
+from time to time and the bit-stream is not frozen yet."
+HOMEPAGE="http://celt-codec.org/"
+SRC_URI="http://downloads.xiph.org/releases/celt/celt-${VERSION}.tar.gz"
+SRC_DIR="celt-${VERSION}"
+
+PATCH_URI="0.5.1-no-undefined.patch"
+
+DEPEND="pkgconfig(ogg)"
+
+PKG_NAMES="${NAME} libcelt051_0 libcelt051-devel"
+celt051_CATEGORY="Audio"
+celt051_CONTENTS="usr/bin/*051.exe usr/share/doc/"
+libcelt051_0_CONTENTS="usr/bin/cygcelt051-0.dll"
+libcelt051_devel_CONTENTS="usr/include/ usr/lib/"

@@ -1,8 +1,0 @@
-category: Audio
-requires: libcelt051_0
-external-source: celt051
-sdesc: "Xiph low-delay audio codec (libdevel)"
-ldesc: "CELT is a very low delay audio codec designed for high-quality 
-communications. Its potential uses include video-conferencing and 
-network music performance. The code is still in early stage, so it may 
-be broken from time to time and the bit-stream is not frozen yet."
